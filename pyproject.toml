@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "textual-date-spinner"
+version = "0.1.0"
+description = "Simple date selecting widget for Textual"
+authors = ["Ben Clemmey <bclemmey@users.noreply.github.com>"]
+readme = "README.md"
+license = "MIT"
+packages = [
+    { include = "textual_date_spinner", from = "src" },
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+textual = "^0.47.1"
+
+
+[tool.poetry.group.dev.dependencies]
+textual-dev = "^1.4.0"
